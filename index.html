@@ -39,12 +39,15 @@
     />
   </head>
   <body>
+    
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 pad bord">
+      <div class="row center">
+        <div class="col-lg-5 col-md-5 col-sm-12 pad bord">
           <h1>Name Picker Website</h1>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 center pad bord">
+        <div class="col-lg-2 col-md-2 col-sm-0"></div>
+
+        <div class="col-lg-5 col-md-5 col-sm-12 center pad bord">
           <p>
             Using a name picker website is easy. Just type in the names, click
             to choose, and the website randomly selects one for you. You can
@@ -56,24 +59,27 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 center pad bord">
-            <label for="nameInputBox" class="form-label">Input Names:</label>
-            <input type="text" class="form-control" id="nameInputBox" placeholder="John, Rob..." />
+        <div class="col-lg-5 col-md-5 col-sm-12 center pad bord">
+            <label for="nameInput" class="form-label">Input Names:</label>
+            <input type="text" class="form-control" id="nameInput" placeholder="John, Rob..." />
             </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 center pad bord">
-            <button class="btn" id="addNameButton"> Add Names</button>
+            <div class="col-lg-2 col-md-2 col-sm-0"></div>
+        <div class="col-lg-5 col-md-5 col-sm-12 center pad bord">
+            <button class="btn" id="addNameBtn"> Add Names</button>
         </div>
       </div>
+      <br><br>
 <div class="row">
-      <div class="col-12 center pad bord" id="nameDisplayDiv">
+      <div class="col-12 center pad bord" id="">
+        <ul id="nameList" class="list-group"></ul>
         <h3>Name Display Div</h3>
       </div>
     </div>
-    <div class= "center" id="nameDisplayDiv">
-<button class="btn" id="displayNamesButton">Display Names</button>
+    <div class= "center">
+<button class="btn" id="pickRandomBtn">Pick Random Name</button>
 </div>
 <div class="row">
-      <div class="col-12 center pad bord" id="slelectedNameDiv">
+      <div class="col-12 center pad bord" id="randomName">
         <h3>Selected Name Div</h3>
 
       </div>
@@ -81,10 +87,12 @@
 
 
 </div>
+    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>
