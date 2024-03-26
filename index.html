@@ -37,18 +37,18 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.cdnfonts.com/css/chomsky" rel="stylesheet" />
   </head>
   <body>
-    
     <div class="container-fluid">
       <div class="row center">
         <div class="col-lg-5 col-md-5 col-sm-12 pad bord">
-          <h1>Name Picker Website</h1>
+          <h1 class="heady">Name Picker Website</h1>
         </div>
         <div class="col-lg-2 col-md-2 col-sm-0"></div>
 
         <div class="col-lg-5 col-md-5 col-sm-12 center pad bord">
-          <p>
+          <p class="bodytext">
             Using a name picker website is easy. Just type in the names, click
             to choose, and the website randomly selects one for you. You can
             customize settings if you want, like excluding duplicates. Once
@@ -60,34 +60,46 @@
       </div>
       <div class="row">
         <div class="col-lg-5 col-md-5 col-sm-12 center pad bord">
-            <label for="nameInput" class="form-label">Input Names:</label>
-            <input type="text" class="form-control" id="nameInput" placeholder="John, Rob..." />
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-0"></div>
-        <div class="col-lg-5 col-md-5 col-sm-12 center pad bord">
-            <button class="btn" id="addNameBtn"> Add Names</button>
+          <label for="nameInput" class="form-label inputn">INPUT NAMES:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nameInput"
+            placeholder="Write each name here..."
+          />
+          <br />
+          <p class="bodytext">
+            Input the names here, and click the button on the right. Make sure
+            to input the names one at a time, making sure each is spelled
+            correctly as they the list cannot be edited after a name is entered
+            and the only way to remove a name is to draw it on the wheel.
+          </p>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-0"></div>
+        <div class="col-lg-5 col-md-5 col-sm-12 center pad bord con">
+          <button class="btn addn" id="addNameBtn">
+            ADD NAMES
+        
+          </button>
         </div>
       </div>
-      <br><br>
-<div class="row">
-      <div class="col-12 center pad bord" id="">
-        <ul id="nameList" class="list-group"></ul>
-        <h3>Name Display Div</h3>
+      <br /><br />
+      <div class="row">
+        <div class="col-12 center pad bord" id="">
+          <ul id="nameList" class="list-group"></ul>
+          <h3>Name Display Div</h3>
+        </div>
+      </div>
+      <div class="center">
+        <button class="btn" id="pickRandomBtn">Pick Random Name</button>
+      </div>
+      <div class="row">
+        <div class="col-12 center pad bord" id="randomName">
+          <h3>Selected Name Div</h3>
+        </div>
       </div>
     </div>
-    <div class= "center">
-<button class="btn" id="pickRandomBtn">Pick Random Name</button>
-</div>
-<div class="row">
-      <div class="col-12 center pad bord" id="randomName">
-        <h3>Selected Name Div</h3>
 
-      </div>
-    </div>
-
-
-</div>
-    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

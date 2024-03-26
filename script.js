@@ -1,30 +1,30 @@
-const nameArray = []; //Create a list to store names
+const nameArray = []; // CREATE A LIST TO STORE NAMES
 
 function addName() {
-  const nameInput = getElementById('nameInput');
-  const name = document.getElementById('nameInput').value.trim(); //Get a trimmed value
+  const nameInput = document.getElementById("nameInput");
+  const name = nameInput.value.trim(); //GET A TRIMMED VERSION OF THE NAME FROM THE INPUT BOX
   nameArray.push(name);
   displayNames();
-  nameInput.value = ''
+  nameInput.value = "";
 }
 
 function displayNames() {
-  const nameList = document.getElementById('nameList');
-  nameList.innerHTML = ''
+  const nameList = document.getElementById("nameList"); //GET UL ELEMENT
+  nameList.innerHTML = ""; //CLEARS THE LIST
 
-  for (let i = 0; i < nameArray.length; i++){
-    const name = nameArray[i]
+  for (let i = 0; i < nameArray.length; i++) {
+    //0 IS THE FIRST TIME THROUGH THE LOOP
+    const name = nameArray[i]; //GET THE CURRENT NAME FROM THE ARRAY
 
-        const li = document.createElement('li')
-        li.className = 'list-group-item'
+    const li = document.createElement("li");
+    li.className = "list-group-item";
+    const span = document.createElement("span");
+    span.textContent = name;
 
-        const span = document.createElement('span')
-        span.textContent = name
+    li.appendChild(span); //PUTS SPAN TAG INSIDE OF LI
 
-        li.appendChild(span)
-        nameList.appendChild(li)
-
+    nameList.appendChild(li);
   }
 }
 
-document.getElementById('addNameBtn').addEventListener('click', addName);
+document.getElementById("addNameBtn").addEventListener("click", addName);

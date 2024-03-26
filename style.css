@@ -1,12 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100&display=swap");
+
 .center {
-    text-align: center;
+  text-align: center;
 }
 .pad {
-    padding: 2vw;
+  padding: 2vw;
 }
 .bord {
-    border: 2px solid black;
+  border: 2px solid black;
 }
 body {
-    margin: 2vw;
+  margin: 2vw;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(198, 198, 198, 1) 100%
+  );
+  color: #3b3633;
+}
+.inputn {
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+}
+.heady {
+  font-family: "Chomsky", sans-serif;
+  font-size: 60px;
+}
+.bodytext {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+}
+.addn {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 4vw;
+  font-family: "Times New Roman", Times, serif;
+  transition: 1s ease-in-out;
+  outline: none;
+}
+.addn:hover {
+  transition: 1s ease-in-out;
+  background: #adadad;
+  box-shadow: 0vw 0vw 3vw 2vw #a5a5a5;
+}
+
+.addn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
 }
