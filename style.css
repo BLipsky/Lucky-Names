@@ -7,7 +7,7 @@
   padding: 2vw;
 }
 .bord {
-  border: 2px solid black;
+  border: 2px solid #3b3633;
 }
 body {
   margin: 2vw;
@@ -19,7 +19,7 @@ body {
   );
   color: #3b3633;
 }
-.inputn {
+.head {
   font-weight: 600;
   font-family: "Times New Roman", Times, serif;
   font-size: 30px;
@@ -34,7 +34,7 @@ body {
 }
 .addn {
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 2rem;
   font-size: 4vw;
   font-family: "Times New Roman", Times, serif;
   transition: 1s ease-in-out;
@@ -45,9 +45,55 @@ body {
   background: #adadad;
   box-shadow: 0vw 0vw 3vw 2vw #a5a5a5;
 }
-
+.addn:active {
+  border: .5vw whi;
+}
+.addn2 {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 3vw;
+  transition: 1s ease-in-out;
+  outline: none;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  border: .01rem solid #3b3633;
+  margin-bottom: 4vw;
+}
+.addn2:hover {
+  transition: 1s ease-in-out;
+  background: #adadad;
+  box-shadow: 0vw 0vw 3vw 2vw #a5a5a5;
+}
+.addn2:active {
+  border: .5vw whi;
+}
 .addn span {
   color: white;
   font-size: 18px;
   font-weight: 100;
 }
+.times {
+  font-family: 'Times New Roman', Times, serif;
+}
+.cir {
+  border-radius: 2vw;
+}
+.spe {
+  font-size: 5vw;
+  box-shadow: inset 0vw 0vw 2vw rgb(255, 232, 150);
+}
+  /* Define the animation */
+  @keyframes buildUpAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Apply the animation to list items */
+  .list-group-item {
+    animation: buildUpAnimation 0.5s ease-out;
+  }
